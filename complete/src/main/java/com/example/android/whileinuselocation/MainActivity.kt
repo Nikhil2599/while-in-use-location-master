@@ -298,7 +298,7 @@ class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceCh
             )
 
             if (location != null) {
-                logResultsToScreen("Foreground location: ${location.toText()}")
+                logResultsToScreen("Foreground location: ${location.toText()}"+"\nspeed = ${(location.speed)}"+"\naccuracy = ${(location.accuracy)}")
             }
         }
     }
